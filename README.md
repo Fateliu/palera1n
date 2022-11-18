@@ -60,8 +60,9 @@ A better tutorial can be found [here](https://ios.cfw.guide/installing-palera1n)
    - A10/A11设备必须禁用密码
    - Put your device in DFU mode before running.
 3. Follow the steps on your screen.
-4. 卸载越狱`./palera1n.sh --restorerootfs`
-5. 欢迎添加软件源：https://apt.wxhbts.vip
+4. 越狱成功 打开 提示 app 选择install 重启激活选择tool - Activate Tweaks
+5. 卸载越狱`./palera1n.sh --restorerootfs`
+6. 欢迎添加软件源：https://apt.wxhbts.vip
 # Repos
 
 ### Tweaks mode
