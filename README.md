@@ -61,6 +61,7 @@ A better tutorial can be found [here](https://ios.cfw.guide/installing-palera1n)
    - Put your device in DFU mode before running.
 3. Follow the steps on your screen.
 4. 卸载越狱`./palera1n.sh --restorerootfs`
+5. 欢迎添加软件源：https://apt.wxhbts.vip
 # Repos
 
 ### Tweaks mode
