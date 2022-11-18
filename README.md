@@ -3,6 +3,7 @@
     <p>palera1n</p>
 </h1>
 <h3 align="center">An iOS 15.0-15.7.1 work-in-progress, (semi-)tethered checkm8 jailbreak.</h3>
+<h3 align="center">本版修复iPhone8 - iPhone x 15.7和15.7.1 越狱出现的init pzb 错误</h3>
 <p align="center">
     <strong><a href="CHANGELOG.md">Change Log</a></strong>
     •
