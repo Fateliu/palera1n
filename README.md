@@ -53,6 +53,7 @@ You may join [here](https://dsc.gg/palera1n).
 
 # 如何使用?
 A better tutorial can be found [here](https://ios.cfw.guide/installing-palera1n).
+
 手机必须安装 提示 App 出现错误还原设备后安装 提示 APP后再试
 1. 终端 `git clone --recursive https://github.com/wxhbts/palera1n && cd palera1n`
 2. 运行 `./palera1n.sh --tweaks <手机系统版本>` (run with `sudo` if you're on linux)
