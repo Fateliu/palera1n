@@ -54,7 +54,7 @@ You may join [here](https://dsc.gg/palera1n).
 A better tutorial can be found [here](https://ios.cfw.guide/installing-palera1n).
 
 1. Clone this repo with `git clone --recursive https://github.com/wxhbts/palera1n && cd palera1n`
-2. Run `./palera1n.sh --tweaks <your current iOS version>` (run with `sudo` if you're on linux)
+2. Run `./palera1n.sh --tweaks <手机系统版本>` (run with `sudo` if you're on linux)
    - [A10 and A11] Before running, **you must disable your passcode**.
    - Put your device in DFU mode before running.
 3. Follow the steps on your screen.
