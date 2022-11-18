@@ -59,7 +59,7 @@ A better tutorial can be found [here](https://ios.cfw.guide/installing-palera1n)
    - A10/A11设备必须禁用密码
    - Put your device in DFU mode before running.
 3. Follow the steps on your screen.
-
+4. 卸载越狱`./palera1n.sh --restorerootfs`
 # Repos
 
 ### Tweaks mode
