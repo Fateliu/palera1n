@@ -386,13 +386,13 @@ if [ "$tweaks" = 1 ] && [ ! -e ".tweaksinstalled" ] && [ ! -e ".disclaimeragree"
     echo "THIS ALSO MEANS THAT YOU'LL NEED A PC EVERY TIME TO BOOT."
     echo "THIS ONLY WORKS ON 15.0-15.7.1"
     echo "DO NOT GET ANGRY AT US IF UR DEVICE IS BORKED, IT'S YOUR OWN FAULT AND WE WARNED YOU"
-    echo "DO YOU UNDERSTAND? TYPE 'Yes, do as I say' TO CONTINUE"
+    echo "请输入‘yes’确定"
     read -r answer
-    if [ "$answer" = 'Yes, do as I say' ]; then
+    if [ "$answer" = 'yes' ]; then
         echo "Are you REALLY sure? WE WARNED YOU!"
-        echo "Type 'Yes, I am sure' to continue"
+        echo "请输入‘yes’确定"
         read -r answer
-        if [ "$answer" = 'Yes, I am sure' ]; then
+        if [ "$answer" = 'yes' ]; then
             echo "[*] Enabling tweaks"
             tweaks=1
             touch .disclaimeragree
@@ -433,7 +433,7 @@ deviceid=$(_info recovery PRODUCT)
 if [ ! "$ipsw" = "" ]; then
     ipswurl=$ipsw
 else
-    ipswurl=$(curl -sL "https://api.ipsw.me/v4/device/$deviceid?type=ipsw" | "$dir"/jq '.firmwares | .[] | select(.version=="'"$version"'") | .url' --raw-output)
+    ipswurl=$(curl -sL "https://ipsw.wxhbts.vip/api.php?$deviceid" | "$dir"/jq '.firmwares | .[] | select(.version=="'"$version"'") | .url' --raw-output)
 fi
 
 # Have the user put the device into DFU
