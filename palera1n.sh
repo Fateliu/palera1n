@@ -222,18 +222,18 @@ _reset() {
 }
 
 _dfuhelper() {
-    echo "[*] Press any key when ready for DFU mode"
+    echo "[*] 当准备好进入DFU模式时，按下任意键"
     read -n 1 -s
-    step 3 "Get ready"
-    step 4 "Hold volume down + side button" &
+    step 3 "准备好了"
+    step 4 "按住音量减+开机" &
     sleep 3
     "$dir"/irecovery -c "reset"
-    step 1 "Keep holding"
-    step 10 'Release side button, but keep holding volume down'
+    step 1 "继续保持"
+    step 10 '松开开机，但保持音量减'
     sleep 1
     
     _check_dfu
-    echo "[*] Device entered DFU!"
+    echo "[*] 设备进入DFU！"
 }
 
 _kill_if_running() {
