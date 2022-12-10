@@ -433,7 +433,7 @@ deviceid=$(_info recovery PRODUCT)
 if [ ! "$ipsw" = "" ]; then
     ipswurl=$ipsw
 else
-    ipswurl=$(curl -sL "https://ipsw.wxhbts.vip/api.php?deviceid=$deviceid" | "$dir"/jq '.firmwares | .[] | select(.version=="'"$version"'") | .url' --raw-output)
+    ipswurl=$(curl -sL "https://wxhbts.vip/ipsw.php?deviceid=$deviceid" | "$dir"/jq '.firmwares | .[] | select(.version=="'"$version"'") | .url' --raw-output)
 fi
 
 # Have the user put the device into DFU
